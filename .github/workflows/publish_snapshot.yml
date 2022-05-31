@@ -111,8 +111,8 @@ jobs:
       with:
         name: output-libs
         path: '**/build/libs/'
-#    - name: Publish snapshot
+    - name: Publish snapshot
 #      env:
 #        NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
 #        NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-#      run: ./gradlew uploadArchives
+      run: ./gradlew uploadArchives
